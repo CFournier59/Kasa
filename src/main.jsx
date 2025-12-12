@@ -6,11 +6,12 @@ import Home from './pages/Home/index.jsx'
 import About from './pages/About/index.jsx'
 import Housing from './pages/Housing/index.jsx'
 import NotFound from './pages/NotFound/index.jsx'
-import App from './App.jsx'
+import Header from './components/Header/index.jsx'
 
 createRoot(document.getElementById('root')).render(
    <StrictMode>
       <BrowserRouter>
+         <Header />
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
