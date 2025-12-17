@@ -1,8 +1,10 @@
-export default function Card({ title, src }) {
+import { Link } from 'react-router'
+
+export default function Card({ title, src, housingId }) {
    return (
-      <div>
+      <Link to={`/housing/${housingId}`}>
          <img src={src} alt={title} />
          <h2>{title}</h2>
-      </div>
+      </Link>
    )
 }

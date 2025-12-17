@@ -8,8 +8,9 @@ export default function Gallery() {
             return (
                <Card
                   key={housing.id}
+                  housingId={housing.id}
                   title={housing.title}
-                  src={housing.pictures[0]}
+                  src={housing.cover}
                />
             )
          })}
