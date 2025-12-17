@@ -7,6 +7,7 @@ import About from './pages/About/index.jsx'
 import Housing from './pages/Housing/index.jsx'
 import NotFound from './pages/NotFound/index.jsx'
 import Header from './components/Header/index.jsx'
+import Footer from './components/Footer/index.jsx'
 
 createRoot(document.getElementById('root')).render(
    <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/housing/:id" element={<Housing />} />
             <Route path="*" element={<NotFound />} />
          </Routes>
+         <Footer />
       </BrowserRouter>
    </StrictMode>
 )
