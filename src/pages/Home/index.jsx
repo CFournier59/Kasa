@@ -1,5 +1,13 @@
+import Banner from '../../components/Banner'
+import Gallery from '../../components/Gallery'
+
 function Home() {
-   return <h1>Home Page</h1>
+   return (
+      <main>
+         <Banner whithTitle={true} />
+         <Gallery />
+      </main>
+   )
 }
 
 export default Home
