@@ -19,13 +19,19 @@ export default function Carousel({ cover, pictures }) {
          <div>
             <figure>
                <img src={currentSrc} alt="housing" />
-               <figcaption>{`${pictures.indexOf(currentSrc) + 1} / ${
-                  pictures.length
-               }`}</figcaption>
+               {pictures.length > 1 && (
+                  <figcaption>{`${pictures.indexOf(currentSrc) + 1} / ${
+                     pictures.length
+                  }`}</figcaption>
+               )}
             </figure>
          </div>
-         <button onClick={handlePrevClick}>previous</button>
-         <button onClick={handleNextClick}>next</button>
+         {pictures.length > 1 && (
+            <>
+               <button onClick={handlePrevClick}>previous</button>
+               <button onClick={handleNextClick}>next</button>
+            </>
+         )}
       </div>
    )
 }
