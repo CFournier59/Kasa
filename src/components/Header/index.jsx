@@ -1,12 +1,14 @@
 import { Link } from 'react-router'
+import logo from '../../assets/logos/logo-68.svg'
 
-function Header() {
+export default function Header() {
    return (
       <div>
-         <Link to="/">Accueil</Link>
-         <Link to="/about">A Propos</Link>
+         <img src={logo} alt="Kasa Logo" />
+         <nav>
+            <Link to="/">Accueil</Link>
+            <Link to="/about">A Propos</Link>
+         </nav>
       </div>
    )
 }
-
-export default Header
