@@ -1,5 +1,6 @@
 import { useParams } from 'react-router'
 import housings from '../../data/logements.json'
+import Carousel from '../../components/Carousel'
 
 export default function Housing() {
    const { id } = useParams()
@@ -7,8 +8,7 @@ export default function Housing() {
    return (
       <main>
          <section>
-            {/* <Carousel cover={housing.cover} pictures={housing.pictures} />
-            <Properties /> */}
+            <Carousel cover={housing.cover} pictures={housing.pictures} />
          </section>
       </main>
    )
