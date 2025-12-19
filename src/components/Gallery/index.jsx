@@ -1,7 +1,6 @@
-import housings from '../../data/logements.json'
 import Card from '../Card'
 
-export default function Gallery() {
+export default function Gallery({ housings }) {
    return (
       <div>
          {housings.map((housing) => {

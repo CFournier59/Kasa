@@ -9,14 +9,25 @@ import NotFound from './pages/NotFound/index.jsx'
 import Header from './components/Header/index.jsx'
 import Footer from './components/Footer/index.jsx'
 
+async function init() {
+   const response = await fetch('../public/data/logements.json')
+   const text = await response.text()
+   return JSON.parse(text)
+}
+
+const housings = await init()
+
 createRoot(document.getElementById('root')).render(
    <StrictMode>
       <BrowserRouter>
          <Header />
          <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home housings={housings} />} />
             <Route path="/about" element={<About />} />
-            <Route path="/housing/:id" element={<Housing />} />
+            <Route
+               path="/housing/:id"
+               element={<Housing housings={housings} />}
+            />
             <Route path="*" element={<NotFound />} />
          </Routes>
          <Footer />
