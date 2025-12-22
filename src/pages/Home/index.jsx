@@ -1,11 +1,11 @@
 import Banner from '../../components/Banner'
 import Gallery from '../../components/Gallery'
 
-function Home() {
+function Home({ housings }) {
    return (
       <main>
          <Banner whithTitle={true} />
-         <Gallery />
+         <Gallery housings={housings} />
       </main>
    )
 }
