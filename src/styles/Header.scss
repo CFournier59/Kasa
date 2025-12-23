@@ -1,0 +1,21 @@
+@use './settings.scss' as s;
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em 2em;
+}
+
+.navbar {
+   display: flex;
+   gap: 1.5em;
+   &__link {
+      text-decoration: none;
+      color: s.$secondary-color;
+      font-weight: 500;
+      &--actual {
+         border-bottom: 2px solid s.$secondary-color;
+      }
+   }
+}
