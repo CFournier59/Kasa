@@ -1,0 +1,17 @@
+@use './settings.scss' as s;
+
+.footer {
+   background-color: s.$secondary-color;
+   padding: 20px;
+   text-align: center;
+
+   &__logo {
+      width: 100px;
+      margin-bottom: 10px;
+   }
+
+   &__copyright {
+      color: s.$background-color;
+      font-size: 14px;
+   }
+}
