@@ -1,8 +1,7 @@
 @use './settings.scss' as s;
 
 :root {
-   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-   line-height: 1.5;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 400;
 
    color: s.$secondary-color;
