@@ -1,0 +1,15 @@
+@use './settings.scss' as s;
+
+.gallery {
+   width: 100%;
+   border-radius: 25px;
+   background-color: #f6f6f6;
+   &__container {
+      margin: auto;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 45px;
+      padding: 40px 0;
+   }
+}

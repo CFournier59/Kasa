@@ -1,0 +1,21 @@
+@use './settings.scss' as s;
+
+.card {
+   width: 340px;
+   height: 340px;
+
+   &__cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+   }
+   &__title {
+      position: relative;
+      bottom: 70px;
+      left: 20px;
+      color: white;
+      font-size: 18px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+   }
+}
