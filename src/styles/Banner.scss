@@ -1,0 +1,20 @@
+@use './settings.scss' as s;
+
+.banner {
+   width: 100%;
+   height: 223px;
+   background-position: center;
+   border-radius: 25px;
+   &__title {
+      color: s.$background-color;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      text-align: center;
+      padding: 82px 0;
+      border-radius: 25px;
+      text-shadow: 0px 4px 4px #00000025;
+      -webkit-text-stroke: 0.06em black;
+      paint-order: stroke fill;
+      font-size: 48px;
+   }
+}
