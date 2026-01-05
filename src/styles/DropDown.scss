@@ -1,0 +1,27 @@
+@use './settings.scss' as s;
+
+.drop-down {
+   width: 100%;
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 10px;
+      background-color: s.$primary-color;
+      border-radius: 10px;
+   }
+
+   &__title {
+      color: s.$background-color;
+      margin: 0;
+      font-size: 18px;
+   }
+
+   &__content {
+      padding: 15px 20px;
+      color: black;
+      background-color: #f6f6f6;
+      line-height: 1.5;
+      border-radius: 0 0 10px 10px;
+   }
+}
