@@ -1,0 +1,46 @@
+@use './settings.scss' as s;
+
+.infos {
+   &__top-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+   }
+   &__title {
+      font-size: 36px;
+      color: s.$primary-color;
+      font-weight: 500;
+      margin: 0;
+   }
+   &__location {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 10px 0;
+   }
+   &__host {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: s.$primary-color;
+      img {
+         width: 64px;
+         height: 64px;
+         border-radius: 50%;
+         object-fit: cover;
+      }
+   }
+   &__middle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   &__bottom-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 7%;
+   }
+}

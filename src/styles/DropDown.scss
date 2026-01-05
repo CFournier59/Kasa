@@ -2,13 +2,11 @@
 
 .drop-down {
    width: 100%;
-   font-size: 18px;
-
    &__top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 20px;
+      padding: 7px 10px;
       background-color: s.$primary-color;
       border-radius: 10px;
    }
@@ -16,6 +14,7 @@
    &__title {
       color: s.$background-color;
       margin: 0;
+      font-size: 18px;
    }
 
    &__content {
