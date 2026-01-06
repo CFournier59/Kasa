@@ -12,6 +12,7 @@
    @media screen and (max-width: s.$phone-breakpoint) {
       height: 111px;
       box-shadow: none;
+      margin-bottom: 5px;
    }
    &__title {
       color: s.$background-color;
@@ -36,7 +37,7 @@
          text-align: center;
       }
       @media screen and (max-width: 451px) {
-         padding: 27px 25px;
+         padding: 27px 20px;
          text-align: start;
       }
    }
