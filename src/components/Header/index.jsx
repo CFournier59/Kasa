@@ -6,11 +6,12 @@ import { useEffect, useState } from 'react'
 
 export default function Header() {
    const location = useLocation()
+   const phoneBreakpoint = 799
    const [capSize, setCapSize] = useState(false)
    const [logo, setLogo] = useState(desktopLogo)
    useEffect(() => {
       const handleResize = () => {
-         if (window.innerWidth >= 800) {
+         if (window.innerWidth >= phoneBreakpoint) {
             setCapSize(false)
             setLogo(desktopLogo)
          } else {
