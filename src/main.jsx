@@ -16,17 +16,23 @@ async function init() {
 }
 
 const housings = await init()
+const phoneBreakpoint = 799
 
 createRoot(document.getElementById('root')).render(
    <StrictMode>
       <BrowserRouter>
-         <Header />
+         <Header phoneBreakpoint={phoneBreakpoint} />
          <Routes>
             <Route path="/" element={<Home housings={housings} />} />
             <Route path="/about" element={<About />} />
             <Route
                path="/housing/:id"
-               element={<Housing housings={housings} />}
+               element={
+                  <Housing
+                     housings={housings}
+                     phoneBreakpoint={phoneBreakpoint}
+                  />
+               }
             />
             <Route path="*" element={<NotFound />} />
          </Routes>

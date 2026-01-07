@@ -4,9 +4,8 @@ import phoneLogo from '../../assets/logos/logo-46.svg'
 import '../../styles/Header.scss'
 import { useEffect, useState } from 'react'
 
-export default function Header() {
+export default function Header({ phoneBreakpoint }) {
    const location = useLocation()
-   const phoneBreakpoint = 799
    const [capSize, setCapSize] = useState(false)
    const [logo, setLogo] = useState(desktopLogo)
    useEffect(() => {

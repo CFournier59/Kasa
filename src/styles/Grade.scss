@@ -3,4 +3,10 @@
 .scale {
    display: flex;
    gap: 10px;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      gap: 8px;
+      &__star {
+         height: 15px;
+      }
+   }
 }
