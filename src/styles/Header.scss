@@ -5,6 +5,9 @@
    justify-content: space-between;
    align-items: center;
    margin: 30px 0;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      margin: 15px 0;
+   }
 }
 
 .navbar {
@@ -12,8 +15,12 @@
    gap: 1.5em;
    &__link {
       text-decoration: none;
+      font-size: 24px;
       color: s.$secondary-color;
       font-weight: 500;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         font-size: 12px;
+      }
       &--actual {
          border-bottom: 2px solid s.$secondary-color;
       }

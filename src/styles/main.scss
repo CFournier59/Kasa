@@ -17,6 +17,9 @@ body {
    justify-content: center;
    max-width: 1240px;
    margin: 0 100px;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      margin: 0 18px;
+   }
 }
 
 a {

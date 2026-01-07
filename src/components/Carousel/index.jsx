@@ -39,10 +39,18 @@ export default function Carousel({ cover, pictures }) {
          {pictures.length > 1 && (
             <div className="carousel__button-container">
                <button className="carousel__button" onClick={handlePrevClick}>
-                  <img src={arrowBack} alt="previous" />
+                  <img
+                     className="carousel__button__icon"
+                     src={arrowBack}
+                     alt="previous"
+                  />
                </button>
                <button className="carousel__button" onClick={handleNextClick}>
-                  <img src={arrowForward} alt="next" />
+                  <img
+                     className="carousel__button__icon"
+                     src={arrowForward}
+                     alt="next"
+                  />
                </button>
             </div>
          )}

@@ -1,9 +1,12 @@
 @use './settings.scss' as s;
 
 .card {
-   width: 340px;
+   flex: 1 1 250px;
+   min-width: 250px;
    height: 340px;
-
+   @media screen and (max-width: s.$phone-breakpoint) {
+      height: 255px;
+   }
    &__cover {
       width: 100%;
       height: 100%;
@@ -11,9 +14,14 @@
       border-radius: 10px;
    }
    &__title {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       position: relative;
+      width: 87%;
       bottom: 70px;
-      left: 20px;
+      left: 15px;
       color: white;
       font-size: 18px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
