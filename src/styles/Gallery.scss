@@ -12,14 +12,13 @@
    &__container {
       margin: auto;
       width: 90%;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
       gap: 47px;
       padding: 40px 0;
       @media screen and (max-width: s.$phone-breakpoint) {
+         display: flex;
          flex-direction: column;
-         flex-wrap: nowrap;
          width: 100%;
          padding: 20px 0;
          gap: 25px;

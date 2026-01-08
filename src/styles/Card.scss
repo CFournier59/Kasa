@@ -1,8 +1,6 @@
 @use './settings.scss' as s;
 
 .card {
-   flex: 1 1 250px;
-   min-width: 250px;
    height: 340px;
    @media screen and (max-width: s.$phone-breakpoint) {
       height: 255px;
