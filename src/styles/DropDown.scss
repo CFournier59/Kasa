@@ -6,9 +6,6 @@
    @media screen and (max-width: s.$phone-breakpoint) {
       margin-top: 20px;
       margin-bottom: 20px;
-      &__indicator {
-         height: 20px;
-      }
    }
    &__top {
       display: flex;
@@ -18,7 +15,20 @@
       background-color: s.$primary-color;
       border-radius: 10px;
    }
+   &__indicator-toggle {
+      display: none;
+      &:checked + .drop-down__indicator {
+         transform: rotate(180deg);
+      }
+   }
+   &__indicator {
+      transform: rotate(0deg);
+      transition: all 0.4s ease;
 
+      @media screen and (max-width: s.$phone-breakpoint) {
+         height: 20px;
+      }
+   }
    &__title {
       color: s.$background-color;
       margin: 0;
