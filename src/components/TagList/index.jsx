@@ -1,8 +1,12 @@
+import '../../styles/TagList.scss'
+
 export default function TagList({ tags }) {
    return (
-      <div>
+      <div className="tag-list">
          {tags.map((tag) => (
-            <span key={tag}>{tag}</span>
+            <span className="tag-list__tag" key={tag}>
+               {tag}
+            </span>
          ))}
       </div>
    )

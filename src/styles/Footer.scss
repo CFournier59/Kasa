@@ -1,0 +1,34 @@
+@use './settings.scss' as s;
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   background-color: s.$secondary-color;
+   text-align: center;
+   width: 100vw;
+   position: absolute;
+   right: 0;
+   height: 199px;
+   padding-bottom: 10px;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      justify-content: center;
+      padding-bottom: 0;
+      height: 209px;
+   }
+
+   &__logo {
+      width: 100px;
+      margin-bottom: 10px;
+   }
+
+   &__copyright {
+      color: s.$background-color;
+      font-size: 24px;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         font-size: 12px;
+         width: 100px;
+      }
+   }
+}

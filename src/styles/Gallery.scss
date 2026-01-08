@@ -1,0 +1,28 @@
+@use './settings.scss' as s;
+
+.gallery {
+   margin-bottom: 35px;
+   width: 100%;
+   border-radius: 25px;
+   background-color: #f6f6f6;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      margin-bottom: 0;
+      background-color: transparent;
+   }
+   &__container {
+      margin: auto;
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 47px;
+      padding: 40px 0;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         flex-direction: column;
+         flex-wrap: nowrap;
+         width: 100%;
+         padding: 20px 0;
+         gap: 25px;
+      }
+   }
+}
