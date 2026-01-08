@@ -12,13 +12,17 @@ export default function DropDown({ title, content }) {
 
    return (
       <div className="drop-down">
-         <div className="drop-down__top" onClick={toggleOpen}>
+         <div className="drop-down__top">
             <h2 className="drop-down__title">{title}</h2>
-            <img
-               className="drop-down__indicator "
-               src={isOpen ? arrowDown : arrowUp}
-               alt="Toggle DropDown"
-            />
+            <label>
+               <input type="checkbox" className="drop-down__indicator-toggle" />
+               <img
+                  onClick={toggleOpen}
+                  className="drop-down__indicator "
+                  src={arrowUp}
+                  alt="Toggle DropDown"
+               />
+            </label>
          </div>
          {isOpen && <div className="drop-down__content">{content}</div>}
       </div>

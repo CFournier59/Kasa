@@ -16,7 +16,7 @@ async function init() {
 }
 
 const housings = await init()
-const phoneBreakpoint = 799
+const phoneBreakpoint = 768
 
 createRoot(document.getElementById('root')).render(
    <StrictMode>
