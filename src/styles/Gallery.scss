@@ -1,0 +1,27 @@
+@use './settings.scss' as s;
+
+.gallery {
+   margin-bottom: 35px;
+   width: 100%;
+   border-radius: 25px;
+   background-color: #f6f6f6;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      margin-bottom: 0;
+      background-color: transparent;
+   }
+   &__container {
+      margin: auto;
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
+      gap: 47px;
+      padding: 40px 0;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         padding: 20px 0;
+         gap: 25px;
+      }
+   }
+}

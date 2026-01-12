@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import '../../styles/Carousel.scss'
+import arrowBack from '../../assets/buttons/arrow_back.svg'
+import arrowForward from '../../assets/buttons/arrow_forward.svg'
 
 export default function Carousel({ cover, pictures }) {
    const [currentSrc, setSrc] = useState(cover)
@@ -18,22 +21,38 @@ export default function Carousel({ cover, pictures }) {
    }
 
    return (
-      <div>
-         <div>
-            <figure>
-               <img src={currentSrc} alt="housing" />
+      <div className="carousel">
+         <div className="carousel__container">
+            <figure className="carousel__item">
+               <img
+                  className="carousel__picture"
+                  src={currentSrc}
+                  alt="housing"
+               />
                {pictures.length > 1 && (
-                  <figcaption>{`${pictures.indexOf(currentSrc) + 1} / ${
-                     pictures.length
-                  }`}</figcaption>
+                  <figcaption className="carousel__caption">{`${
+                     pictures.indexOf(currentSrc) + 1
+                  } / ${pictures.length}`}</figcaption>
                )}
             </figure>
          </div>
          {pictures.length > 1 && (
-            <>
-               <button onClick={handlePrevClick}>previous</button>
-               <button onClick={handleNextClick}>next</button>
-            </>
+            <div className="carousel__button-container">
+               <button className="carousel__button" onClick={handlePrevClick}>
+                  <img
+                     className="carousel__button__icon"
+                     src={arrowBack}
+                     alt="previous"
+                  />
+               </button>
+               <button className="carousel__button" onClick={handleNextClick}>
+                  <img
+                     className="carousel__button__icon"
+                     src={arrowForward}
+                     alt="next"
+                  />
+               </button>
+            </div>
          )}
       </div>
    )

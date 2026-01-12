@@ -4,7 +4,7 @@ import Gallery from '../../components/Gallery'
 function Home({ housings }) {
    return (
       <main>
-         <Banner whithTitle={true} />
+         <Banner withTitle={true} />
          <Gallery housings={housings} />
       </main>
    )

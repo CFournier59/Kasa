@@ -1,0 +1,34 @@
+@use './settings.scss' as s;
+
+:root {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   color: s.$secondary-color;
+   background-color: s.$background-color;
+}
+
+.root {
+   width: 100%;
+}
+
+body {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   max-width: 1240px;
+   margin: 0 100px;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      margin: 0 18px;
+   }
+   @media screen and (min-width: 1441px) {
+      margin: 0 auto;
+   }
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}

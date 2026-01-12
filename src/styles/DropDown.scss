@@ -1,0 +1,55 @@
+@use './settings.scss' as s;
+
+.drop-down {
+   width: 100%;
+   margin-bottom: 30px;
+   @media screen and (max-width: s.$phone-breakpoint) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 10px;
+      background-color: s.$primary-color;
+      border-radius: 10px;
+   }
+   &__indicator {
+      transform: rotate(0deg);
+      transition: all 0.4s ease;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         height: 20px;
+      }
+      &--open {
+         transform: rotate(180deg);
+      }
+   }
+   &__title {
+      color: s.$background-color;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         font-size: 13px;
+      }
+   }
+   &__content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      color: black;
+      background-color: #f6f6f6;
+      line-height: 1.5;
+      border-radius: 0 0 10px 10px;
+      font-size: 18px;
+      transition: max-height 0.5s, padding 0.5s;
+      @media screen and (max-width: s.$phone-breakpoint) {
+         font-size: 12px;
+      }
+      &--open {
+         max-height: 500px;
+         padding: 15px 20px;
+      }
+   }
+}

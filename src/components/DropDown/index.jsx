@@ -1,19 +1,31 @@
 import { useState } from 'react'
-
+import '../../styles/DropDown.scss'
+import arrow from '../../assets/buttons/arrow-up-24.svg'
 export default function DropDown({ title, content }) {
    const [isOpen, setIsOpen] = useState(false)
-
    const toggleOpen = () => {
       setIsOpen(!isOpen)
    }
-
    return (
-      <div>
-         <div onClick={toggleOpen}>
-            <h2>{title}</h2>
-            <span>{isOpen ? '▲' : '▼'}</span>
+      <div className="drop-down">
+         <div className="drop-down__top">
+            <h2 className="drop-down__title">{title}</h2>
+            <img
+               onClick={toggleOpen}
+               className={`drop-down__indicator${
+                  isOpen ? ' drop-down__indicator--open' : ''
+               }`}
+               src={arrow}
+               alt="Toggle DropDown"
+            />
          </div>
-         {isOpen && <div>{content}</div>}
+         <div
+            className={`drop-down__content${
+               isOpen ? ' drop-down__content--open' : ''
+            }`}
+         >
+            {content}
+         </div>
       </div>
    )
 }
