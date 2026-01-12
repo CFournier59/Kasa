@@ -1,6 +1,10 @@
 import Card from '../Card'
 import '../../styles/Gallery.scss'
-
+/**
+ * Gallery component
+ * @param {JSON} housings list of housings to display
+ * @returns {JSX.Element} Gallery component
+ */
 export default function Gallery({ housings }) {
    return (
       <div className="gallery">

@@ -1,7 +1,13 @@
 import { Link } from 'react-router'
 import '../../styles/Card.scss'
-
-export default function Card({ title, src, housingId }) {
+/**
+ * Card component
+ * @param {string} housingId id of the housing
+ * @param {string} src picture source path
+ * @param {string} title title of the housing
+ * @returns {JSX.Element} Card component
+ */
+export default function Card({ housingId, src, title }) {
    return (
       <div className="card">
          <Link to={`/housing/${housingId}`}>

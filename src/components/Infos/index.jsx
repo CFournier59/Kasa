@@ -3,8 +3,14 @@ import TagList from '../TagList'
 import Grade from '../Grade'
 import DropDown from '../DropDown'
 import { useEffect, useState } from 'react'
-
+/**
+ * Infos component to display housing information
+ * @param {object} housing the housing object from housings.JSON
+ * @param {number} phoneBreakpoint breakpoint to switch between desktop and mobile logos. modify at main.jsx
+ * @returns {JSX.Element} Infos component
+ */
 export default function Infos({ housing, phoneBreakpoint }) {
+   // phoneTemplate useState is used to adapt change the structure of jsx elements depending on the screen size
    const [phoneTemplate, setPhoneTemplate] = useState(false)
    useEffect(() => {
       const handleResize = () => {

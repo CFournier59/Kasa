@@ -3,7 +3,11 @@ import desktopLogo from '../../assets/logos/logo-68.svg'
 import phoneLogo from '../../assets/logos/logo-46.svg'
 import '../../styles/Header.scss'
 import { useEffect, useState } from 'react'
-
+/**
+ * Header component
+ * @param {number} phoneBreakpoint breakpoint to switch between desktop and mobile logos. modify at main.jsx
+ * @returns {JSX.Element} Header component
+ */
 export default function Header({ phoneBreakpoint }) {
    const location = useLocation()
    const [capSize, setCapSize] = useState(false)
