@@ -2,7 +2,12 @@ import { useState } from 'react'
 import '../../styles/Carousel.scss'
 import arrowBack from '../../assets/buttons/arrow_back.svg'
 import arrowForward from '../../assets/buttons/arrow_forward.svg'
-
+/**
+ * Carousel component to display housing pictures
+ * @param {string} cover the src path of the cover picture from housing object
+ * @param {array} pictures all the pictures used from housing object including its cover
+ * @returns {JSX.Element} Carousel component
+ */
 export default function Carousel({ cover, pictures }) {
    const [currentSrc, setSrc] = useState(cover)
 

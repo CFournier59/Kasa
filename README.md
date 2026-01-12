@@ -1,16 +1,18 @@
-# React + Vite
+![badgeoc](https://forthebadge.com/api/badges/generate?panels=2&primaryLabel=made+with&secondaryLabel=openclassrooms&primaryBGColor=%23613583&primaryTextColor=%23FFFFFF&secondaryBGColor=%239141ac&secondaryTextColor=%23FFFFFF&primaryFontSize=12&primaryFontWeight=600&primaryLetterSpacing=2&primaryFontFamily=Roboto&primaryTextTransform=uppercase&secondaryFontSize=12&secondaryFontWeight=900&secondaryLetterSpacing=2&secondaryFontFamily=Montserrat&secondaryTextTransform=uppercase&primaryIcon=bookstack&primaryIconColor=%23FFFFFF&primaryIconSize=24&primaryIconPosition=left)
+![badgereact](https://forthebadge.com/api/badges/generate?panels=2&primaryLabel=framework&secondaryLabel=react+%2B+vite&primaryBGColor=%231c71d8&primaryTextColor=%23FFFFFF&secondaryBGColor=%2362a0ea&secondaryTextColor=%23FFFFFF&primaryFontSize=12&primaryFontWeight=600&primaryLetterSpacing=2&primaryFontFamily=Roboto&primaryTextTransform=uppercase&secondaryFontSize=12&secondaryFontWeight=900&secondaryLetterSpacing=2&secondaryFontFamily=Montserrat&secondaryTextTransform=uppercase&primaryIcon=vite&primaryIconColor=%23FFFFFF&primaryIconSize=24&primaryIconPosition=left)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# KASA - Trouvez votre appartement, chez vous, partout, et ailleurs
 
-Currently, two official plugins are available:
+Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
 
-## React Compiler
+-  JS
+-  SASS
+-  React + Vite
+-  ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Auteurs
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clément Fournier
+Dans le cadre d'une formation dispensée par OpenClassrooms
