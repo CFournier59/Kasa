@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/main.scss'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { HashRouter, Routes, Route } from 'react-router'
 import Home from './pages/Home/index.jsx'
 import About from './pages/About/index.jsx'
 import Housing from './pages/Housing/index.jsx'
@@ -22,7 +22,7 @@ const phoneBreakpoint = 768
 
 createRoot(document.getElementById('root')).render(
    <StrictMode>
-      <BrowserRouter>
+      <HashRouter>
          <Header phoneBreakpoint={phoneBreakpoint} />
          <Routes>
             <Route path="/" element={<Home housings={housings} />} />
@@ -39,6 +39,6 @@ createRoot(document.getElementById('root')).render(
             <Route path="*" element={<NotFound />} />
          </Routes>
          <Footer />
-      </BrowserRouter>
+      </HashRouter>
    </StrictMode>
 )
