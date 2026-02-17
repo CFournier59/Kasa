@@ -10,7 +10,9 @@ import Header from './components/Header/index.jsx'
 import Footer from './components/Footer/index.jsx'
 
 async function init() {
-   const response = await fetch('/data/logements.json')
+   const response = await fetch(
+      `${import.meta.env.BASE_URL}data/logements.json`
+   )
    const text = await response.text()
    return JSON.parse(text)
 }
